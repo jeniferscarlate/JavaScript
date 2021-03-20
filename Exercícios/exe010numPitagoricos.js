@@ -1,9 +1,8 @@
-/* Construa um algoritmo para verificar se 3 números são pitagóricos. Três números são pitagóricos se o quadrado do maior deles (hipotenusa) é igual a soma do quadrado dos outros dois. Como saída de seu programa imprimir: se pitagóricos, o valor 1 e o valor da hipotenusa ao quadrado; se não pitagórico, apenas o valor 0.
-Os números são denominados pitagóricos por corresponderem a comprimentos de lados de um triângulo retângulo, ou seja, h² = a² + b² */
+/* Construa um algoritmo que lê três números naturais como entradas e verifica se esses números são pitagóricos. Três números são pitagóricos se o quadrado do maior deles (hipotenusa) é igual a soma do quadrado dos outros dois. Como saída de seu programa imprimir: se pitagóricos, o valor 1 e o valor da hipotenusa ao quadrado; se não pitagórico, apenas o valor 0. Os números são denominados pitagóricos por corresponderem a comprimentos de lados de um triângulo retângulo, ou seja, h² = a² + b².*/
 
-var num1 = 9;
-var num2 = 40;
-var num3 = 41;
+var num1 = parseInt(process.argv[2]);
+var num2 = parseInt(process.argv[3]);
+var num3 = parseInt(process.argv[4]);
 var hipo1 = 0;
 var hipo2 = 0;
 var hipo3 = 0;
