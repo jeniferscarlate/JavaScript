@@ -13,6 +13,7 @@ console.log(arr);
 
 // ******************************** Método 01 - Push ********************************
 //permite adicionar valores no final do array.
+
 const pushArray = ['Maçã', 'Uva', 'Morango', 'Manga'];
 console.log(pushArray);
 
@@ -21,6 +22,7 @@ console.log(pushArray);
 
 pushArray.push('Dragão');
 console.log(pushArray);
+
 
 
 // ******************************** Método 02 - Unshift ********************************
@@ -42,6 +44,7 @@ console.log(unshiftArray);
 
 // ******************************** Método 03 - POP ********************************
 //permite remover o último valor de um array.
+
 const popArray = ['João', 'Julio', 'Jenifer', 'José', 'Jonas'];
 console.log(popArray);
 
@@ -49,8 +52,10 @@ popArray.pop();
 console.log(popArray);
 
 
+
 // ******************************** Método 04 - Shift ********************************
 //permite remover o primeiro valor de um array.
+
 const shiftArray = ['João', 'Julio', 'Jenifer', 'José', 'Jonas'];
 console.log(popArray);
 
@@ -76,6 +81,44 @@ console.log(spliceArray);
 
 spliceArray.splice(6, 1, 'Jun');
 console.log(spliceArray);
+
+
+
+// ******************************** Método 06 - Filter ********************************
+//cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida.
+
+const filterArray = [1, 80, 30, 70, 2, 9289, 0];
+console.log(filterArray);
+
+const novoArray = filterArray.filter((qualquerCoisa) => {
+
+    return qualquerCoisa > 10;
+});
+
+console.log(novoArray);
+
+
+
+// ******************************** Método 07 - MAP ********************************
+//O Map não modifica o array original, somente a função callback poderá fazer isso! Ou seja, ela criará um novo array modificado.
+
+const arrayMap = [1, 2, 3, 4, 5];
+
+const arrayModificado = arrayMap.map((arrayMap) => {
+    return arrayMap * arrayMap;
+})
+console.log(arrayModificado);
+
+
+
+// ******************************** Método 08 - ForEach ********************************
+//executa uma dada função em cada elemento de um array.
+
+const foreachArray = ['Carlos', 'Vitor', 'Leo', 'Pedro'];
+
+foreachArray.forEach((nome) => {
+    console.log(nome);
+})
 
 
 
