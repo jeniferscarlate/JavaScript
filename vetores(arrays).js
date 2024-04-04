@@ -57,7 +57,7 @@ console.log(popArray);
 //permite remover o primeiro valor de um array.
 
 const shiftArray = ['João', 'Julio', 'Jenifer', 'José', 'Jonas'];
-console.log(popArray);
+console.log(shiftArray);
 
 shiftArray.shift();
 console.log(shiftArray);
@@ -104,8 +104,8 @@ console.log(novoArray);
 
 const arrayMap = [1, 2, 3, 4, 5];
 
-const arrayModificado = arrayMap.map((arrayMap) => {
-    return arrayMap * arrayMap;
+const arrayModificado = arrayMap.map((resultado) => {
+    return resultado * resultado;
 })
 console.log(arrayModificado);
 
@@ -118,7 +118,30 @@ const foreachArray = ['Carlos', 'Vitor', 'Leo', 'Pedro'];
 
 foreachArray.forEach((nome) => {
     console.log(nome);
-})
+});
+
+
+
+// ******************************** Método 09 - Incluides ********************************
+//determina se um array contém um determinado elemento, retornando true ou false apropriadamente.
+
+const frutas = ['Laranja', 'Limão', 'Goiaba', 'Caju'];
+console.log(frutas);
+
+console.log(frutas.includes('Laranja'));
+
+
+
+// ******************************** Método 10 - Sort ********************************
+//ordena os elementos do próprio array e retorna o array. A ordenação não é necessariamente estável. A ordenação padrão é de acordo com a pontuação de código unicode.
+
+const frutinhas = ['Melão', 'Abacaxi', 'Abacate', 'Framboesa', 'Amora'];
+console.log(frutinhas.sort());
+
+const numeros = [15, 27, 1003, 59, -13, 666];
+console.log(numeros.sort((a, b) => a - b));
+
+
 
 
 
